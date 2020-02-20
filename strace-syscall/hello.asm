@@ -10,3 +10,7 @@ _start:
     mov rsi, hellotxt   ; text buffer buffer
     mov rdx, 20
     syscall		; call kernel
+
+    mov rax, 60         ; exit system call
+    xor rdi, rdi
+    syscall
